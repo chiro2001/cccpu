@@ -111,6 +111,7 @@
 - CCCPU:`Units`元件
   - *Units::`REG`寄存器(基类)*
   - *Units::`ALF`可执行运算(基类)*
+  - *Units::`DAT`数据(基类)*
 - CCCPU::`ALU`运算器
   - (REG)`ADD`加法寄存器
   - (REG)`MLT`乘法寄存器
@@ -125,3 +126,4 @@
 - CCCPU::`STO`储存器
   - (REG)`STR`地址寄存器
   - (REG)`STC`内容寄存器
+  - (DAT)`STD`储存器数据
