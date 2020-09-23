@@ -123,6 +123,7 @@
   - CTL::`SIG`信号控制器
   - (REG)`PC`程序计数器
   - (REG)`IR`指令寄存器
+  - (ALF)`JMP`跳转
 - CCCPU::`STO`储存器
   - (REG)`STR`地址寄存器
   - (REG)`STC`内容寄存器
