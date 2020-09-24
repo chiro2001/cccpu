@@ -1,5 +1,6 @@
-#include "../../include/includes.h"
+#include "incs.h"
 
+#ifndef USE_DAT
 class DAT {
  public:
   WORD *data = NULL;
@@ -15,7 +16,27 @@ class DAT {
     return true;
   }
   WORD get_dat(WORD addr) {
-    if (addr > this->size || this->data == NULL) return NULL;
+    if (addr > this->size || this->data == NULL) return 0;
     return this->data[addr];
   }
+
+  bool readfile(char *filename) {
+    std::ifstream file(filename);
+    if (!file.is_open()) return false;
+    std::string line;
+    while (getline(file, line)) {
+      std::cout << line << std::endl;
+      // 先删除注释内容
+      std::regex cm1("/\*.+?\*/");
+    }
+    return true;
+  }
 };
+#endif
+#ifndef USE_MAIN
+int main() {
+  DAT dat = DAT(1024);
+  dat.readfile(FILE_MEMORY);
+  return 0;
+}
+#endif

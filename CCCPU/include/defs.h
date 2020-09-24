@@ -26,3 +26,6 @@
 #define CLOCK_FREQUENCY 5
 #define CLOCK_TIME (int)((double)(1) * 1000 / (double)(CLOCK_FREQUENCY))
 
+#define PROGRAME_START 0x0000
+
+#define FILE_MEMORY "D:\\Programs\\cccpu\\CCCPU\\memory.txt"

@@ -1,5 +1,4 @@
-#include "../include/defs.h"
-#include "../include/config.h"
+#include "incs.h"
 
 class Config {
  public:

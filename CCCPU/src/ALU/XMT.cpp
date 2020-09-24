@@ -1,8 +1,7 @@
 // 乘法操作
 
-#include "../../include/includes.h"
-#include "../Units/ALF.cpp"
-#include "./MLT.cpp"
+#include "incs.h"
+
 
 class XMT : public ALF {
  public:
